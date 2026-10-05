@@ -96,6 +96,8 @@ HEADERS_PADRAO = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
 }
 
+ARQUIVO_BLOCKLIST_ADGUARD = 'adguard_blocklist.txt'
+
 # ---------------------- FUNÇÕES AUXILIARES ----------------------
 
 def log(msg, nivel="INFO"):
@@ -121,6 +123,11 @@ def salvar_blocklist(dominios):
     with open(ARQUIVO_BLOCKLIST, 'w') as f:
         for dominio in sorted(dominios):
             f.write(f"{dominio}\n")
+            
+def exportar_formato_adguard(dominios, caminho=ARQUIVO_BLOCKLIST_ADGUARD):
+    with open(caminho, 'w') as f:
+        for dominio in sorted(dominios):
+            f.write(f"||{dominio}^\n")
 
 def carregar_estado_rotacao():
     if not os.path.exists(ARQUIVO_ESTADO):
@@ -492,8 +499,10 @@ def main():
     log(f"Falhas por fonte: {stats['erros']}")
 
     if qtd_novos > 0:
-        log(f"SUCESSO: {qtd_novos} novos domínios encontrados e purificados!")
+        log(f"SUCESSO: {qtd_novos} novos domínios encontrados!")
         salvar_blocklist(blocklist)
+        exportar_formato_adguard(blocklist)
+        log(f"-> Lista no formato AdGuard exportada para {ARQUIVO_BLOCKLIST_ADGUARD}.")
     else:
         log("Nenhum domínio novo classificado. Arquivo mantido.")
 

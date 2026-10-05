@@ -1,0 +1,42 @@
+name: Rotina do Crawler
+
+on:
+  schedule:
+    # Roda automaticamente a cada 12 horas
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+    # Este comando cria um botão no GitHub para você rodar o script manualmente quando quiser
+
+jobs:
+  run-crawler:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Garante a permissão de salvar arquivos
+
+    steps:
+      - name: Baixar os arquivos do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar o Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar bibliotecas
+        run: |
+          python -m pip install --upgrade pip
+          pip install curl_cffi beautifulsoup4 duckduckgo_search
+
+      - name: Executar o Crawler
+        run: python crawler.py
+
+      - name: Salvar resultados no repositório
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Adiciona os arquivos que podem ter sido modificados
+          git add blocklist.txt estado_rotacao.json cache_instancias_searxng.json
+          
+          # Verifica se houve alguma alteração real. Se sim, faz o commit e envia.
+          git diff --quiet && git diff --staged --quiet || (git commit -m "update: novos domínios adicionados via GitHub Actions" && git push)

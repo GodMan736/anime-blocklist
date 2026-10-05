@@ -21,10 +21,14 @@ git.poast.org
 give.poast.org
 globalseries.digital
 goyabu.io
+hanime.boo
 hanime.moe
+hanime.tv
 hentaianime.cc
+hentaila.io
 hentailegendado.com
 kantanrucloofzrfn7vqlsxbhipkqv55qygn4oxogbnjpfex54bw4gad.onion
+kurozora.app
 meusanimes.blog
 mrpaulblack.paulgo.page
 mutix.tr
@@ -36,6 +40,8 @@ reanime.to
 rockeaters.net
 searx.space
 seriesflixmax.org
+seriesflixon.org
+serieslab.com
 sflix.rocks
 showfound.com
 status.perennialte.ch

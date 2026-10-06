@@ -2,8 +2,8 @@ name: Rotina do Crawler
 
 on:
   schedule:
-    # Roda automaticamente a cada 12 horas
-    - cron: '0 */12 * * *'
+    # Roda automaticamente a cada 24 horas
+    - cron: '0 0 * * *'
   workflow_dispatch:
     # Este comando cria um botão no GitHub para você rodar o script manualmente quando quiser
 

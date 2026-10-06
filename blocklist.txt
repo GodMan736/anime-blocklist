@@ -1,4 +1,6 @@
 about.opnxng.com
+account.indst.eu
+adminforge.de
 allappinc.com
 animefire.app
 animenew.com.br
@@ -12,7 +14,10 @@ animezone.com.br
 anreyalp.vip
 anubis.techaro.lol
 bsky.app
+chat.indst.eu
+cups.moe
 darkskiesfilm.com
+dns.indst.eu
 dresden.network
 einfachzocken.eu
 filmesmix.com
@@ -29,7 +34,10 @@ hentaila.io
 hentailegendado.com
 kantanrucloofzrfn7vqlsxbhipkqv55qygn4oxogbnjpfex54bw4gad.onion
 kurozora.app
+legal.indst.eu
+mail.indst.eu
 meusanimes.blog
+meusanimes.cc
 mrpaulblack.paulgo.page
 mutix.tr
 operack.com
@@ -42,9 +50,12 @@ searx.space
 seriesflixmax.org
 seriesflixon.org
 serieslab.com
+sev.monster
 sflix.rocks
 showfound.com
+status.indst.eu
 status.perennialte.ch
+status.rhscz.eu
 status.tiekoetter.cloud
 status.weingaertner-it.eu
 sukebei.nyaa.si
@@ -52,8 +63,10 @@ support.dresden.network
 sushianimes.com.br
 techaro.lol
 tiekoetter.com
+tony-liu.com
 tubitv.com
 typingmaster.co.in
+unsplash.com
 v1.astar.bz
 verpobreflix.net
 vkvideo.ru
@@ -62,6 +75,7 @@ weingaertner-it.de
 wuemeli.com
 www17.redecanais.in
 www3.redecanais.vip
+xmr.indst.eu
 xvideos.com
 yurinime.com
 zina.design

@@ -243,3 +243,5 @@
 ||yurinime.com^
 ||zhentube.com^
 ||tokyvideo.com^
+||rutube.ru^
+||superflix49.lol^

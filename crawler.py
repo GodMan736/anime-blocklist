@@ -700,6 +700,107 @@ WHITELIST.update(
     """),
 )
 
+WHITELIST.update(
+    _d("""
+    # ========================================================
+    # Notícias, mídia, cultura e conteúdo geral
+    # ========================================================
+    60millions-mag.com about.me biography.com bhg.com cbc.ca
+    cnn.com dailydot.com ge.globo.com goal.com history.com
+    opovo.com.br people.com radaronline.com tvpop.com.br
+    wate.com
+
+    # ========================================================
+    # Educação, dicionários e conhecimento
+    # ========================================================
+    britannica.com collinsdictionary.com danword.com
+    de.wikibooks.org de.wikivoyage.org en.wikiquote.org
+    en.wiktionary.org harvard.edu onlinebible.org
+    wordplays.com wikidata.org wikihow.com
+    sciencedirect.com researchgate.net
+
+    # ========================================================
+    # Universidades, governo e instituições
+    # ========================================================
+    college.harvard.edu pll.harvard.edu epa.gov
+    scdf.gov.sg sso.agc.gov.sg app2.btebadmission.gov.bd
+    bteb.gov.bd btebadmission.gov.bd rchs.rockdaleschools.org
+    wgfapps.wyo.gov wgfd.wyo.gov
+
+    # ========================================================
+    # Tecnologia, software e segurança
+    # ========================================================
+    chartgen.ai config.office.com docs.replit.com
+    docs.virustotal.com duck.ai en.uptodown.com
+    ezgif.com effectfree.net geekproject.com.br guru99.com
+    hostingadvice.com icy-veins.com imgflip.com lwn.net
+    notebookcheck.com obsproject.com office.com
+    portal.office.com virustotal.com zoom.us
+    wc? 
+
+    # ========================================================
+    # Comércio, bancos, viagens e serviços
+    # ========================================================
+    alza.cz amazon.de americanexpress.com allrecipes.com
+    bestbuy.com bol.com booking.com coolblue.nl costco.com
+    community.ebay.com ebay.com etsy.com kayak.com
+    macys.com mediamarkt.ch mediamarkt.nl propertyguru.com.sg
+    rei.com target.com walmart.com
+    agentofferings.propertyguru.com.sg
+
+    # ========================================================
+    # Automóveis, fabricantes e empresas
+    # ========================================================
+    amanengineering.com.sg brandvm.com
+    devenir-autoentrepreneur.fr es.jeep.com gear.jeep.com
+    jeep.com jeez-semicon.com goldmansachs.com
+    eu.sennheiser-hearing.com toyota.com toyotaofseattle.com
+    southwest.com stan.com.au
+
+    # ========================================================
+    # Comunidades e fóruns legítimos
+    # ========================================================
+    bitcointalk.org dvd-forum.at forum.bug.hr forum.knuddels.de
+    forums.commentcamarche.net forums.moto-station.com
+    forums.x-plane.org fragrantica.com mountainproject.com
+    northeastshooters.com redlib.catsarch.com
+    sticktock.com tinhte.vn
+
+    # ========================================================
+    # Streaming, vídeo e música oficiais
+    # ========================================================
+    funimation.com hbomax.com hidive.com iq.com
+    open.spotify.com playpilot.com rutube.ru
+    thestreamable.com tenor.com viki.com vimeo.com
+    wedio.com
+
+    # ========================================================
+    # Anime, bancos de dados e serviços editoriais legítimos
+    # ========================================================
+    anime.manga.com digimon.fandom.com
+    infrastruktur? 
+    interspecies-reviewers.fandom.com
+    kinobox.cz csfd.cz skdesu.com synchronkartei.de
+    tvtropes.com webnovel.com
+
+    # ========================================================
+    # Relógios e varejistas relacionados
+    # ========================================================
+    allwatches.com.sg chrono24.de colognewatch.de
+    h2hubwatches.com horloge.nl jomashop.com
+    kaizenaire.com tudorwatch.com vincentwatch.com.sg
+    watches.com watchbook.sg watchrr.nl watchspree.com.sg
+    watchxl.nl worldofsolitaire.com
+
+    # ========================================================
+    # Wikimedia, Google, Microsoft e variantes de domínio
+    # ========================================================
+    google.de maps.google.de
+    wikibooks.org wikivoyage.org wikiquote.org wiktionary.org
+    spotify.com office.com uptodown.com
+    """),
+)
+
 # Sufixos oficiais. A função de whitelist precisa tratá-los
 # separadamente para cobrir todos os subdomínios.
 WHITELIST_SUFFIXOS = {
